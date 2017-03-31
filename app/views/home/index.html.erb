@@ -1,23 +1,42 @@
+<% @products.each do |product| %>
+<div class="col-md-4">
+     <div class="thumbnail" style="height: 500px;">
+       <img src="<%=product.image%>" size="152x200" alt="No Content">
+       <div class="caption">
+         <p><%=product.name%></p>
+         <p><%=product.description%></p>
+         <p><%=number_to_currency(product.price)%></p>
+         <div class="container button-wrapper">
+    <button class="btn btn-success btn-lg"><span class="glyphicon glyphicon-shopping-cart"></span> <span class="items"></span></button></div> 
+       </div>
+     </div>
+ </div>
+<%end%>
+<!-- 
 <div class="container">    
   <div class="row">
     <div class="col-sm-4">
       <div class="panel panel-primary">
-        <div class="panel-heading"> Ring 1</div>
+        <div class="panel-heading"> Silver Ring</div>
         <div class="panel-body"><%= image_tag("test1.jpg", alt:"image")%></div>
-        <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+         <div class="container button-wrapper">
+  <button class="btn btn-success btn-lg"><span class="glyphicon glyphicon-shopping-cart"></span> <span class="items"></span></button></div> 
+     <div class="panel-footer">Rs 500</div>
       </div>
     </div>
     <div class="col-sm-4"> 
       <div class="panel panel-danger">
-        <div class="panel-heading">BLACK FRIDAY DEAL</div>
-        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+        <div class="panel-heading">Gold-Diamond Earing</div>
+        <div class="panel-body"><%= image_tag("test2.jpg", alt:"image")%></div>
+        <div class="container button-wrapper">
+      <button class="btn btn-success btn-lg"><span class="glyphicon glyphicon-shopping-cart"></span> <span class="items"></span></button></div>
+        <div class="panel-footer">Rs 100</div>
       </div>
     </div>
     <div class="col-sm-4"> 
       <div class="panel panel-success">
-        <div class="panel-heading">BLACK FRIDAY DEAL</div>
-        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-heading">Platinum Ring</div>
+        <div class="panel-body"><%= image_tag("test3.jpg", alt:"image")%></div>
         <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
       </div>
     </div>
@@ -28,22 +47,22 @@
   <div class="row">
     <div class="col-sm-4">
       <div class="panel panel-primary">
-        <div class="panel-heading">BLACK FRIDAY DEAL</div>
-        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-heading">Silver Chain</div>
+        <div class="panel-body"><%= image_tag("test4.jpg", alt:"image")%></div>
         <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
       </div>
     </div>
     <div class="col-sm-4"> 
       <div class="panel panel-primary">
-        <div class="panel-heading">BLACK FRIDAY DEAL</div>
-        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-heading">Silver Plate Ring</div>
+        <div class="panel-body"><%= image_tag("test5.jpg", alt:"image")%></div>
         <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
       </div>
     </div>
     <div class="col-sm-4"> 
       <div class="panel panel-primary">
-        <div class="panel-heading">BLACK FRIDAY DEAL</div>
-        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-heading">Gold Ring</div>
+        <div class="panel-body"><%= image_tag("test6.jpg", alt:"image")%></div>
         <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
       </div>
     </div>
@@ -51,3 +70,4 @@
 </div><br><br>
 
      
+ -->
